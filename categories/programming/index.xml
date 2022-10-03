@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Programming on vlad.wtf</title>
+    <link>https://vlad.wtf/categories/programming/</link>
+    <description>Recent content in Programming on vlad.wtf</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 03 Jul 2021 16:10:01 +0000</lastBuildDate><atom:link href="https://vlad.wtf/categories/programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Things you need to know if you work with Angular</title>
+      <link>https://vlad.wtf/angular/</link>
+      <pubDate>Sat, 03 Jul 2021 16:10:01 +0000</pubDate>
+      
+      <guid>https://vlad.wtf/angular/</guid>
+      <description>There are other choices out there but Angular is a great framework overall. There might be things that are a little odd but once you understand them you can build good software with Angular.
+Unlike React, Angular is a fully fledged framework, not a rendering library.
+This little guide is not meant to be a comprehensive tutorial or guide, but links to other resources where you can learn about critical topics in depth.</description>
+    </item>
+    
+    <item>
+      <title>Why 6 projects in 2020 turned into 0 projects in 2020</title>
+      <link>https://vlad.wtf/6to0/</link>
+      <pubDate>Sat, 16 Jan 2021 16:10:01 +0000</pubDate>
+      
+      <guid>https://vlad.wtf/6to0/</guid>
+      <description>So 2020 is over. And I did exactly 0 things that I can call projects. Here&amp;rsquo;s my follow-up and what I&amp;rsquo;m changing in 2021 so I actually ship things. My initial 6 projects is 2020 post is on IndieHackers.
+So, what happened? The highlight is that I finished my PhD and got a job. For the whole year I was juggling the thesis writing and the job. I was fairly drained of energy with these two alone, so side projects didn&amp;rsquo;t get any attention.</description>
+    </item>
+    
+    <item>
+      <title>On learning to code</title>
+      <link>https://vlad.wtf/code/</link>
+      <pubDate>Tue, 22 Aug 2017 12:11:03 +0000</pubDate>
+      
+      <guid>https://vlad.wtf/code/</guid>
+      <description>Last week I had started to answer questions on Quora. It&amp;rsquo;s surprisingly addictive I should say, so I kept answering a couple of questions every day. As my interests include programming and various languages, I get plenty of &amp;ldquo;How do I learn to program in X?&amp;rdquo; or &amp;ldquo;As a beginner, how to choose a project?&amp;rdquo; It&amp;rsquo;s great people are interested in learning to code, but I feel like most have the wrong motivation or they look at it the wrong way.</description>
+    </item>
+    
+  </channel>
+</rss>

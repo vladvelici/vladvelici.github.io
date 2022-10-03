@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Complicated login forms | vlad.wtf</title>
+<meta name="title" content="Complicated login forms" />
+<meta name="description" content="I&rsquo;ve logged into Twitter today. This was the flow:
+Refuse cookies. Scroll down, find login button. The page is full of options to sign up. Being asked to type some login information, but not username and password. Just the ID first. Safari autocomplete is handy - I use it to fill in my username, asks for Touch ID (since it attempts to fill password as well) Page changes, now the username is written and I&rsquo;m allowed to type a password, so I have to autocomplete again (and use Touch ID again)." />
+<meta name="keywords" content="" />
+
+
+<meta property="og:title" content="Complicated login forms" />
+<meta property="og:description" content="I&rsquo;ve logged into Twitter today. This was the flow:
+Refuse cookies. Scroll down, find login button. The page is full of options to sign up. Being asked to type some login information, but not username and password. Just the ID first. Safari autocomplete is handy - I use it to fill in my username, asks for Touch ID (since it attempts to fill password as well) Page changes, now the username is written and I&rsquo;m allowed to type a password, so I have to autocomplete again (and use Touch ID again)." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://vlad.wtf/login-forms/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2022-10-02T16:10:01+00:00" />
+<meta property="article:modified_time" content="2022-10-02T16:10:01+00:00" />
+
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Complicated login forms"/>
+<meta name="twitter:description" content="I&rsquo;ve logged into Twitter today. This was the flow:
+Refuse cookies. Scroll down, find login button. The page is full of options to sign up. Being asked to type some login information, but not username and password. Just the ID first. Safari autocomplete is handy - I use it to fill in my username, asks for Touch ID (since it attempts to fill password as well) Page changes, now the username is written and I&rsquo;m allowed to type a password, so I have to autocomplete again (and use Touch ID again)."/>
+
+
+
+<meta itemprop="name" content="Complicated login forms">
+<meta itemprop="description" content="I&rsquo;ve logged into Twitter today. This was the flow:
+Refuse cookies. Scroll down, find login button. The page is full of options to sign up. Being asked to type some login information, but not username and password. Just the ID first. Safari autocomplete is handy - I use it to fill in my username, asks for Touch ID (since it attempts to fill password as well) Page changes, now the username is written and I&rsquo;m allowed to type a password, so I have to autocomplete again (and use Touch ID again)."><meta itemprop="datePublished" content="2022-10-02T16:10:01+00:00" />
+<meta itemprop="dateModified" content="2022-10-02T16:10:01+00:00" />
+<meta itemprop="wordCount" content="399">
+<meta itemprop="keywords" content="" />
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  body {
+    font-family: Palatino, serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: #fff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: #444;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: #222;
+  }
+
+  a {
+    color: #3273dc;
+     
+  }
+
+  .title {
+    text-decoration: none;
+    border: 0;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: #f2f2f2;
+  }
+
+  pre code {
+    color: #222;
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+  }
+
+  div.highlight pre {
+    background-color: initial;
+    color: initial;
+  }
+
+  div.highlight code {
+    background-color: unset;
+    color: unset;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: #222;
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .helptext {
+    color: #777;
+    font-size: small;
+  }
+
+  .errorlist {
+    color: #eba613;
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: #8b6fcb;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #333;
+      color: #ddd;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    b {
+      color: #eee;
+    }
+
+    a {
+      color: #8cc2dd;
+    }
+
+    code {
+      background-color: #777;
+    }
+
+    pre code {
+      color: #ddd;
+    }
+
+    blockquote {
+      color: #ccc;
+    }
+
+    textarea,
+    input {
+      background-color: #252525;
+      color: #ddd;
+    }
+
+    .helptext {
+      color: #aaa;
+    }
+  }
+
+</style>
+
+</head>
+
+<body>
+  <header><a href="/" class="title">
+  <h2>vlad.wtf</h2>
+</a>
+</header>
+  <main>
+
+<h1>Complicated login forms</h1>
+<p>
+  <i>
+    <time datetime='2022-10-02' pubdate>
+      02 Oct, 2022
+    </time>
+  </i>
+</p>
+
+<content>
+  <p>I&rsquo;ve logged into Twitter today. This was the flow:</p>
+<ol>
+<li>Refuse cookies.</li>
+<li>Scroll down, find login button. The page is full of options to sign up.</li>
+<li>Being asked to type some login information, but not username and password. Just the ID first.</li>
+<li>Safari autocomplete is handy - I use it to fill in my username, asks for Touch ID (since it attempts to fill password as well)</li>
+<li>Page changes, now the username is written and I&rsquo;m allowed to type a password, so I have to autocomplete again (and use Touch ID again).</li>
+<li>Now I get an SMS to confirm it&rsquo;s me. I wait for the code.</li>
+<li>The code gets to me, I put it in.</li>
+<li>Twitter logs me in. Yay.</li>
+<li>Twitter shows a big modal asking to confirm that the phone number it has just used to log me in is still mine. WHY?! I&rsquo;ve just used it to login!</li>
+</ol>
+<p>Wouldn&rsquo;t this be simpler if both username and password fields were available in the login form? I&rsquo;ve seen this type of interaction in many places, where you type the ID first and then the password field appears on the next page. It really breaks the auto-complete features on browsers. I find it less convenient even if I was typing passwords - I have to wait for another page before being able to type the password.</p>
+<p>This flow makes sense if there were other login methods available that don&rsquo;t need a password, but in the Twitter case I wasn&rsquo;t using one of them. It was obvious because I did not click one of the <em>&ldquo;Sign in with &hellip;&rdquo;</em> links.</p>
+<p>It also makes sense for e-mailing a login link instead of asking for a password, but again, this wasn&rsquo;t the case here.</p>
+<p>It&rsquo;s not something new, but it has become more annoying to sign in than to sign up. I&rsquo;m assuming it&rsquo;s because (1) a lot of users just stay signed in, (2) companies prefer users to stay signed in so in a way it&rsquo;s incentivized (more so by the fact that sign out buttons are hidden behind some menus).</p>
+<p>On the note of it being annoying to sign in - have you tried signing in to OpsGenie using a Google account from work? It&rsquo;s one of the worst I&rsquo;ve seen &ndash; many redirects from page to page and it won&rsquo;t remember me as signed in even if I wanted it to.</p>
+
+</content>
+<p>
+  
+</p>
+
+  </main>
+  <footer>
+</footer>
+
+    
+</body>
+
+</html>

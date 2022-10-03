@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pixel processing on vlad.wtf</title>
+    <link>https://vlad.wtf/categories/pixel-processing/</link>
+    <description>Recent content in Pixel processing on vlad.wtf</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 14 Sep 2015 13:15:00 +0000</lastBuildDate><atom:link href="https://vlad.wtf/categories/pixel-processing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JavaScript pixel processing</title>
+      <link>https://vlad.wtf/pixel/</link>
+      <pubDate>Mon, 14 Sep 2015 13:15:00 +0000</pubDate>
+      
+      <guid>https://vlad.wtf/pixel/</guid>
+      <description>Problem: thresholding an image using a HTML5 2D canvas. It&amp;rsquo;s a really simple problem, but if implemented wrong it can lead to really bad performance.
+My initial idea was to make a function everyPixel(ctx, f) that applies f to every pixel of ctx. And then f would deal with all the pixel processing and drawing.
+Basic implementation:
+function everyPixel(ctx, f) { var width = ctx.canvas.width; var height = ctx.canvas.height; for (var i=0;i&amp;lt;width;i++) { for (var j=0;j&amp;lt;height;j++) { var col = ctx.</description>
+    </item>
+    
+  </channel>
+</rss>

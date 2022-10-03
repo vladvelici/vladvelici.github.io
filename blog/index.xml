@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on vlad.wtf</title>
+    <link>https://vlad.wtf/blog/</link>
+    <description>Recent content in Blogs on vlad.wtf</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 02 Oct 2022 16:10:01 +0000</lastBuildDate><atom:link href="https://vlad.wtf/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Complicated login forms</title>
+      <link>https://vlad.wtf/login-forms/</link>
+      <pubDate>Sun, 02 Oct 2022 16:10:01 +0000</pubDate>
+      
+      <guid>https://vlad.wtf/login-forms/</guid>
+      <description>I&amp;rsquo;ve logged into Twitter today. This was the flow:
+Refuse cookies. Scroll down, find login button. The page is full of options to sign up. Being asked to type some login information, but not username and password. Just the ID first. Safari autocomplete is handy - I use it to fill in my username, asks for Touch ID (since it attempts to fill password as well) Page changes, now the username is written and I&amp;rsquo;m allowed to type a password, so I have to autocomplete again (and use Touch ID again).</description>
+    </item>
+    
+    <item>
+      <title>Things you need to know if you work with Angular</title>
+      <link>https://vlad.wtf/angular/</link>
+      <pubDate>Sat, 03 Jul 2021 16:10:01 +0000</pubDate>
+      
+      <guid>https://vlad.wtf/angular/</guid>
+      <description>There are other choices out there but Angular is a great framework overall. There might be things that are a little odd but once you understand them you can build good software with Angular.
+Unlike React, Angular is a fully fledged framework, not a rendering library.
+This little guide is not meant to be a comprehensive tutorial or guide, but links to other resources where you can learn about critical topics in depth.</description>
+    </item>
+    
+    <item>
+      <title>Generating bad ideas</title>
+      <link>https://vlad.wtf/bad/</link>
+      <pubDate>Tue, 23 Mar 2021 10:10:01 +0000</pubDate>
+      
+      <guid>https://vlad.wtf/bad/</guid>
+      <description>I’ve been generating bad business ideas for a while. Ideas that sounded kind of OK at first, but when digging a little deeper it was nothing there. On Derek Sivers’ idea multiplier, those would be at the -1 point (awful).
+After some time I’ve noticed that those ideas were repetitive, and I would come up with the same idea (or something extremely similar) all over again, just like it was a new idea altogether.</description>
+    </item>
+    
+    <item>
+      <title>Why 6 projects in 2020 turned into 0 projects in 2020</title>
+      <link>https://vlad.wtf/6to0/</link>
+      <pubDate>Sat, 16 Jan 2021 16:10:01 +0000</pubDate>
+      
+      <guid>https://vlad.wtf/6to0/</guid>
+      <description>So 2020 is over. And I did exactly 0 things that I can call projects. Here&amp;rsquo;s my follow-up and what I&amp;rsquo;m changing in 2021 so I actually ship things. My initial 6 projects is 2020 post is on IndieHackers.
+So, what happened? The highlight is that I finished my PhD and got a job. For the whole year I was juggling the thesis writing and the job. I was fairly drained of energy with these two alone, so side projects didn&amp;rsquo;t get any attention.</description>
+    </item>
+    
+    <item>
+      <title>Lack of continuity really kills productivity</title>
+      <link>https://vlad.wtf/continuity/</link>
+      <pubDate>Wed, 27 Mar 2019 11:34:01 +0000</pubDate>
+      
+      <guid>https://vlad.wtf/continuity/</guid>
+      <description>I have this tendency of working on many things at once, and as a result I don&amp;rsquo;t really finish anything, I just make small progress until I switch context to start working on something else.
+This really kills my productivity. It seems obvious now but when I&amp;rsquo;m working on a project and start feeling pressured by not working on a different project, it&amp;rsquo;s not so obvious that I&amp;rsquo;m not getting either of them done.</description>
+    </item>
+    
+    <item>
+      <title>Why I built the RepX app</title>
+      <link>https://vlad.wtf/repx/</link>
+      <pubDate>Mon, 09 Oct 2017 11:34:01 +0000</pubDate>
+      
+      <guid>https://vlad.wtf/repx/</guid>
+      <description>RepX is a simple exercise app that lets you track workout intervals.
+Read the full article on Medium.
+RepX website.
+RepX on the Apple App Store.</description>
+    </item>
+    
+    <item>
+      <title>On learning to code</title>
+      <link>https://vlad.wtf/code/</link>
+      <pubDate>Tue, 22 Aug 2017 12:11:03 +0000</pubDate>
+      
+      <guid>https://vlad.wtf/code/</guid>
+      <description>Last week I had started to answer questions on Quora. It&amp;rsquo;s surprisingly addictive I should say, so I kept answering a couple of questions every day. As my interests include programming and various languages, I get plenty of &amp;ldquo;How do I learn to program in X?&amp;rdquo; or &amp;ldquo;As a beginner, how to choose a project?&amp;rdquo; It&amp;rsquo;s great people are interested in learning to code, but I feel like most have the wrong motivation or they look at it the wrong way.</description>
+    </item>
+    
+    <item>
+      <title>Chatbots and the bad form-filling experience</title>
+      <link>https://vlad.wtf/chatbot/</link>
+      <pubDate>Sat, 05 Aug 2017 20:17:00 +0000</pubDate>
+      
+      <guid>https://vlad.wtf/chatbot/</guid>
+      <description>Things to consider if you’re thinking to build a chatbot-only service or website.
+Quick notice: I don’t build chatbots and don’t use too many, but I haven’t been impressed with the ones I’ve seen. In no way this is definitive advice on things to consider when building conversational interfaces, this is just my opinion on the topic.
+I’ve seen a few websites that welcome you with a full-screen chatbot and no option to not interact with it.</description>
+    </item>
+    
+    <item>
+      <title>Building startups at EF6: the first half</title>
+      <link>https://vlad.wtf/ef/</link>
+      <pubDate>Thu, 07 Jul 2016 12:34:01 +0000</pubDate>
+      
+      <guid>https://vlad.wtf/ef/</guid>
+      <description>Read this on Medium.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript pixel processing</title>
+      <link>https://vlad.wtf/pixel/</link>
+      <pubDate>Mon, 14 Sep 2015 13:15:00 +0000</pubDate>
+      
+      <guid>https://vlad.wtf/pixel/</guid>
+      <description>Problem: thresholding an image using a HTML5 2D canvas. It&amp;rsquo;s a really simple problem, but if implemented wrong it can lead to really bad performance.
+My initial idea was to make a function everyPixel(ctx, f) that applies f to every pixel of ctx. And then f would deal with all the pixel processing and drawing.
+Basic implementation:
+function everyPixel(ctx, f) { var width = ctx.canvas.width; var height = ctx.canvas.height; for (var i=0;i&amp;lt;width;i++) { for (var j=0;j&amp;lt;height;j++) { var col = ctx.</description>
+    </item>
+    
+    <item>
+      <title>Glee, built with FlightJS</title>
+      <link>https://vlad.wtf/flightjs/</link>
+      <pubDate>Thu, 03 Sep 2015 23:08:00 +0000</pubDate>
+      
+      <guid>https://vlad.wtf/flightjs/</guid>
+      <description>I think it&amp;rsquo;s a good practice to write three things you are grateful for every day. It keeps you focus on the positive. I have this idea from this TED talk. I did it for more than a month some time ago and I&amp;rsquo;m now restarting this habit.
+It happened that I&amp;rsquo;ve received a small notebook as a freebie form some event just before starting this habit thus I was OK with writing three things I was grateful for every day on paper.</description>
+    </item>
+    
+    <item>
+      <title>Reflection on hackathons</title>
+      <link>https://vlad.wtf/hackathon/</link>
+      <pubDate>Fri, 19 Jun 2015 23:29:00 +0000</pubDate>
+      
+      <guid>https://vlad.wtf/hackathon/</guid>
+      <description>For first, a Hackathon is a competition where hackers get together to build something cool. Lots of times designers and business people also join and the judging also takes the business side into consideration. Usually justifying how the idea is useful and/or generating revenue and showing some proof that people want it is enough. A hackathon generally takes a weekend. Some are three days, some are two days long. Almost always the venue is open overnight and sleeping is replaced by caffeine.</description>
+    </item>
+    
+    <item>
+      <title>Install a ROM, hboot and recovery without working volume buttons on HTC Desire (Bravo)</title>
+      <link>https://vlad.wtf/install-rom-hboot/</link>
+      <pubDate>Thu, 19 Feb 2015 12:34:01 +0000</pubDate>
+      
+      <guid>https://vlad.wtf/install-rom-hboot/</guid>
+      <description>Before you follow this article to install the ROM on your device, please note that the result will be a slow, annoying phone.
+My motivation for writing this article and taking this approach in the first place is that my phone does not have working volume buttons at all and it is totally possible to install a newer version of Android.
+My phone is a HTC Desire Bravo running Android 2.</description>
+    </item>
+    
+    <item>
+      <title>Google Summer of Code Experience</title>
+      <link>https://vlad.wtf/gsoc/</link>
+      <pubDate>Wed, 03 Sep 2014 12:34:01 +0000</pubDate>
+      
+      <guid>https://vlad.wtf/gsoc/</guid>
+      <description>Read this on Medium</description>
+    </item>
+    
+  </channel>
+</rss>

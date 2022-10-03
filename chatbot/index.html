@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Chatbots and the bad form-filling experience | vlad.wtf</title>
+<meta name="title" content="Chatbots and the bad form-filling experience" />
+<meta name="description" content="Things to consider if you’re thinking to build a chatbot-only service or website.
+Quick notice: I don’t build chatbots and don’t use too many, but I haven’t been impressed with the ones I’ve seen. In no way this is definitive advice on things to consider when building conversational interfaces, this is just my opinion on the topic.
+I’ve seen a few websites that welcome you with a full-screen chatbot and no option to not interact with it." />
+<meta name="keywords" content="" />
+
+
+<meta property="og:title" content="Chatbots and the bad form-filling experience" />
+<meta property="og:description" content="Things to consider if you’re thinking to build a chatbot-only service or website.
+Quick notice: I don’t build chatbots and don’t use too many, but I haven’t been impressed with the ones I’ve seen. In no way this is definitive advice on things to consider when building conversational interfaces, this is just my opinion on the topic.
+I’ve seen a few websites that welcome you with a full-screen chatbot and no option to not interact with it." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://vlad.wtf/chatbot/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2017-08-05T20:17:00+00:00" />
+<meta property="article:modified_time" content="2017-08-05T20:17:00+00:00" />
+
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Chatbots and the bad form-filling experience"/>
+<meta name="twitter:description" content="Things to consider if you’re thinking to build a chatbot-only service or website.
+Quick notice: I don’t build chatbots and don’t use too many, but I haven’t been impressed with the ones I’ve seen. In no way this is definitive advice on things to consider when building conversational interfaces, this is just my opinion on the topic.
+I’ve seen a few websites that welcome you with a full-screen chatbot and no option to not interact with it."/>
+
+
+
+<meta itemprop="name" content="Chatbots and the bad form-filling experience">
+<meta itemprop="description" content="Things to consider if you’re thinking to build a chatbot-only service or website.
+Quick notice: I don’t build chatbots and don’t use too many, but I haven’t been impressed with the ones I’ve seen. In no way this is definitive advice on things to consider when building conversational interfaces, this is just my opinion on the topic.
+I’ve seen a few websites that welcome you with a full-screen chatbot and no option to not interact with it."><meta itemprop="datePublished" content="2017-08-05T20:17:00+00:00" />
+<meta itemprop="dateModified" content="2017-08-05T20:17:00+00:00" />
+<meta itemprop="wordCount" content="703">
+<meta itemprop="keywords" content="" />
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  body {
+    font-family: Palatino, serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: #fff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: #444;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: #222;
+  }
+
+  a {
+    color: #3273dc;
+     
+  }
+
+  .title {
+    text-decoration: none;
+    border: 0;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: #f2f2f2;
+  }
+
+  pre code {
+    color: #222;
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+  }
+
+  div.highlight pre {
+    background-color: initial;
+    color: initial;
+  }
+
+  div.highlight code {
+    background-color: unset;
+    color: unset;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: #222;
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .helptext {
+    color: #777;
+    font-size: small;
+  }
+
+  .errorlist {
+    color: #eba613;
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: #8b6fcb;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #333;
+      color: #ddd;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    b {
+      color: #eee;
+    }
+
+    a {
+      color: #8cc2dd;
+    }
+
+    code {
+      background-color: #777;
+    }
+
+    pre code {
+      color: #ddd;
+    }
+
+    blockquote {
+      color: #ccc;
+    }
+
+    textarea,
+    input {
+      background-color: #252525;
+      color: #ddd;
+    }
+
+    .helptext {
+      color: #aaa;
+    }
+  }
+
+</style>
+
+</head>
+
+<body>
+  <header><a href="/" class="title">
+  <h2>vlad.wtf</h2>
+</a>
+</header>
+  <main>
+
+<h1>Chatbots and the bad form-filling experience</h1>
+<p>
+  <i>
+    <time datetime='2017-08-05' pubdate>
+      05 Aug, 2017
+    </time>
+  </i>
+</p>
+
+<content>
+  <p>Things to consider if you’re thinking to build a chatbot-only service or website.</p>
+<p>Quick notice: I don’t build chatbots and don’t use too many, but I haven’t been impressed with the ones I’ve seen. In no way this is definitive advice on things to consider when building conversational interfaces, this is just my opinion on the topic.</p>
+<p>I’ve seen a few websites that welcome you with a full-screen chatbot and no option to not interact with it. It’s a great concept and I liked it at first, until I felt like it is wasting my time and realised there’s no way to get what you want without interacting with the chatbot.</p>
+<p>When you fill in a form, you generally need it to be:</p>
+<ul>
+<li>Clear. Give you enough information so that you can fill it up correctly and fast.</li>
+<li>Fast. No unnecessary wait times.</li>
+<li>Mistake-friendly. It needs to let you fix mistakes easily.</li>
+<li>Responsive. Tell you when you’re wrong early on so you can fix it. (instant input validation)</li>
+<li>Auto-complete friendly, and generally be built in such a way that it makes your life easier rather than harder.</li>
+</ul>
+<p>There are plenty of guides online about how to design great forms, I’m not going to write about that. I’m going to write about using chatbots and what they feel like to me. I think there are some that are actually good/fun/etc but they generally give me a bad, too long, form-filling experience.</p>
+<p>When a chatbot asks you things to collect some information (like you filling in a form):</p>
+<ul>
+<li>You can’t see all the fields at once. Might be confusing where the conversation is going and it might be hard to get more details.</li>
+<li>You have to wait for an answer with every interaction. (equivalent to waiting for the page to load after filling in every single input box)</li>
+<li>You can’t go back to correct things easily — sometimes at all and you have to start over.</li>
+<li>You don’t get instant input validation, and sometimes you don’t even know what input formats are acceptable. (particularly bad implementation: bot: “How many would you like?”, user: “Just one”, bot: “Not a valid integer.”)</li>
+<li>You can’t use autocomplete or any of your browser features to auto-complete things. This is likely going to improve in the future.
+This is not something that I call a good conversational experience. This is just making forms worse.</li>
+</ul>
+<p>I like the idea of making form-filling feel more human but in some cases chatbots can’t or at least don’t yet beat well designed forms. Building good chatbots is hard work and the majority just aren’t there.</p>
+<p>I just found <a href="https://medium.com/r/?url=https%3A%2F%2Fgithub.com%2Fspace10-community%2Fconversational-form">this library</a> that transforms HTML forms into a chatbot interface — nice attempt and good concept but this is not the purpose of a chatbot in my opinion. It does not improve the form experience, it makes it worse. It reminds me of <a href="https://typeform.com">TypeForm</a>, which isn’t hyped with chatbots but it gives a very good form-filling experience and it can feel a bit like conversation — and their forms tick all the boxes above.</p>
+<p>I do believe chatbots will get better over time as we get better at building them and understand what kind of experiences people expect and react best to. They will also become easier to build.</p>
+<p>To put all this in perspective, if you call a customer service line and speak to a human agent, you often have a form-filling experience too: you get asked one question at a time, you wait for the operator to type it up on a computer, you get asked the next question. You don’t see your options ahead of time, you don’t get instant validation, and often even though you’re speaking to a human they won’t be able to get out of their script — it’s often the fault of the software they use or strict rules of the call centre, but we’re talking about the end user experience here. Sometimes the operators can’t help you if you’re unsure of an answer and explain the situation in more detail — they politely listen and ask you the question again. To this regard, chatbot systems are more than ready to replace human operators in most of the cases.</p>
+
+</content>
+<p>
+  
+</p>
+
+  </main>
+  <footer>
+</footer>
+
+    
+</body>
+
+</html>

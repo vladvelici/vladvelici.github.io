@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>startup on vlad.wtf</title>
+    <link>https://vlad.wtf/categories/startup/</link>
+    <description>Recent content in startup on vlad.wtf</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 23 Mar 2021 10:10:01 +0000</lastBuildDate><atom:link href="https://vlad.wtf/categories/startup/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Generating bad ideas</title>
+      <link>https://vlad.wtf/bad/</link>
+      <pubDate>Tue, 23 Mar 2021 10:10:01 +0000</pubDate>
+      
+      <guid>https://vlad.wtf/bad/</guid>
+      <description>I’ve been generating bad business ideas for a while. Ideas that sounded kind of OK at first, but when digging a little deeper it was nothing there. On Derek Sivers’ idea multiplier, those would be at the -1 point (awful).
+After some time I’ve noticed that those ideas were repetitive, and I would come up with the same idea (or something extremely similar) all over again, just like it was a new idea altogether.</description>
+    </item>
+    
+  </channel>
+</rss>

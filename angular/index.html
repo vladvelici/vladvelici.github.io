@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Things you need to know if you work with Angular | vlad.wtf</title>
+<meta name="title" content="Things you need to know if you work with Angular" />
+<meta name="description" content="There are other choices out there but Angular is a great framework overall. There might be things that are a little odd but once you understand them you can build good software with Angular.
+Unlike React, Angular is a fully fledged framework, not a rendering library.
+This little guide is not meant to be a comprehensive tutorial or guide, but links to other resources where you can learn about critical topics in depth." />
+<meta name="keywords" content="" />
+
+
+<meta property="og:title" content="Things you need to know if you work with Angular" />
+<meta property="og:description" content="There are other choices out there but Angular is a great framework overall. There might be things that are a little odd but once you understand them you can build good software with Angular.
+Unlike React, Angular is a fully fledged framework, not a rendering library.
+This little guide is not meant to be a comprehensive tutorial or guide, but links to other resources where you can learn about critical topics in depth." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://vlad.wtf/angular/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2021-07-03T16:10:01+00:00" />
+<meta property="article:modified_time" content="2021-07-03T16:10:01+00:00" />
+
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Things you need to know if you work with Angular"/>
+<meta name="twitter:description" content="There are other choices out there but Angular is a great framework overall. There might be things that are a little odd but once you understand them you can build good software with Angular.
+Unlike React, Angular is a fully fledged framework, not a rendering library.
+This little guide is not meant to be a comprehensive tutorial or guide, but links to other resources where you can learn about critical topics in depth."/>
+
+
+
+<meta itemprop="name" content="Things you need to know if you work with Angular">
+<meta itemprop="description" content="There are other choices out there but Angular is a great framework overall. There might be things that are a little odd but once you understand them you can build good software with Angular.
+Unlike React, Angular is a fully fledged framework, not a rendering library.
+This little guide is not meant to be a comprehensive tutorial or guide, but links to other resources where you can learn about critical topics in depth."><meta itemprop="datePublished" content="2021-07-03T16:10:01+00:00" />
+<meta itemprop="dateModified" content="2021-07-03T16:10:01+00:00" />
+<meta itemprop="wordCount" content="269">
+<meta itemprop="keywords" content="" />
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  body {
+    font-family: Palatino, serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: #fff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: #444;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: #222;
+  }
+
+  a {
+    color: #3273dc;
+     
+  }
+
+  .title {
+    text-decoration: none;
+    border: 0;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: #f2f2f2;
+  }
+
+  pre code {
+    color: #222;
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+  }
+
+  div.highlight pre {
+    background-color: initial;
+    color: initial;
+  }
+
+  div.highlight code {
+    background-color: unset;
+    color: unset;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: #222;
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .helptext {
+    color: #777;
+    font-size: small;
+  }
+
+  .errorlist {
+    color: #eba613;
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: #8b6fcb;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #333;
+      color: #ddd;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    b {
+      color: #eee;
+    }
+
+    a {
+      color: #8cc2dd;
+    }
+
+    code {
+      background-color: #777;
+    }
+
+    pre code {
+      color: #ddd;
+    }
+
+    blockquote {
+      color: #ccc;
+    }
+
+    textarea,
+    input {
+      background-color: #252525;
+      color: #ddd;
+    }
+
+    .helptext {
+      color: #aaa;
+    }
+  }
+
+</style>
+
+</head>
+
+<body>
+  <header><a href="/" class="title">
+  <h2>vlad.wtf</h2>
+</a>
+</header>
+  <main>
+
+<h1>Things you need to know if you work with Angular</h1>
+<p>
+  <i>
+    <time datetime='2021-07-03' pubdate>
+      03 Jul, 2021
+    </time>
+  </i>
+</p>
+
+<content>
+  <p>There are other choices out there but Angular is a great framework overall. There might be things that are a little odd but once you understand them you can build good software with Angular.</p>
+<p>Unlike React, Angular is a fully fledged framework, not a rendering library.</p>
+<p>This little guide is not meant to be a comprehensive tutorial or guide, but links to other resources where you can learn about critical topics in depth.</p>
+<blockquote>
+<p>I&rsquo;ll be editing this guide every now and then, when I find other things to add. If you know a good resource that should be link let me at vlad dot wtf know and I&rsquo;ll add them.</p>
+</blockquote>
+<p>In my view, to be a good Angular developer you need to understand a bunch of core things from the framework. Those are:</p>
+<ol>
+<li><strong>Dependency injection.</strong>
+Understand the lifecycle of services, when they are instantiated, whether there will be one or more of them, when are instances of services thrown away, etc.</li>
+<li><strong>Change detection.</strong>
+Why is the default change detection strategy generally a bad thing to use? Why immutable data has pretty much nothing to do with this (but it keeps popping up in blog posts)?</li>
+<li><strong>The router.</strong></li>
+<li><strong>RxJS.</strong> Really dig into observables, subjects, and the gazillion utilities already written for them. They&rsquo;re awesome. Don&rsquo;t just <code>.toPromise()</code> (nothing wrong with it, but you&rsquo;d be missing out).</li>
+</ol>
+<h3 id="dependency-injection">Dependency injection</h3>
+<ul>
+<li><a href="https://angular.io/guide/dependency-injection">Angular Dependency Injection guide</a>, and <a href="https://angular.io/guide/dependency-injection-providers">the providers page</a>.</li>
+<li><a href="https://angular.io/guide/architecture-services">Introduction to services and dependency injection</a></li>
+</ul>
+<h3 id="change-detection">Change detection</h3>
+<ul>
+<li><a href="https://angular.io/api/core/ChangeDetectorRef#usage-notes">https://angular.io/api/core/ChangeDetectorRef#usage-notes</a></li>
+<li><a href="https://angular.io/guide/lifecycle-hooks#using-change-detection-hooks">Using change detection hooks</a></li>
+<li><a href="https://angular.io/guide/lifecycle-hooks#defining-custom-change-detection">Defining custom change detection</a></li>
+</ul>
+<h3 id="the-router">The router</h3>
+<ul>
+<li><a href="https://angular.io/guide/routing-overview">Angular routing guide</a></li>
+<li><a href="https://angular.io/guide/observables-in-angular#router">Subscribe to page changes</a></li>
+</ul>
+<h3 id="rxjs">RxJS</h3>
+<ul>
+<li><a href="https://angular.io/guide/practical-observable-usage#exponential-backoff">Exponential backoff example</a></li>
+</ul>
+<h3 id="misc">Misc</h3>
+<ul>
+<li><a href="https://angular.io/guide/lifecycle-hooks#lifecycle-event-sequence">Lifecycle event sequence</a></li>
+</ul>
+
+</content>
+<p>
+  
+</p>
+
+  </main>
+  <footer>
+</footer>
+
+    
+</body>
+
+</html>

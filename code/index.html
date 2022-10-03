@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>On learning to code | vlad.wtf</title>
+<meta name="title" content="On learning to code" />
+<meta name="description" content="Last week I had started to answer questions on Quora. It&rsquo;s surprisingly addictive I should say, so I kept answering a couple of questions every day. As my interests include programming and various languages, I get plenty of &ldquo;How do I learn to program in X?&rdquo; or &ldquo;As a beginner, how to choose a project?&rdquo; It&rsquo;s great people are interested in learning to code, but I feel like most have the wrong motivation or they look at it the wrong way." />
+<meta name="keywords" content="" />
+
+
+<meta property="og:title" content="On learning to code" />
+<meta property="og:description" content="Last week I had started to answer questions on Quora. It&rsquo;s surprisingly addictive I should say, so I kept answering a couple of questions every day. As my interests include programming and various languages, I get plenty of &ldquo;How do I learn to program in X?&rdquo; or &ldquo;As a beginner, how to choose a project?&rdquo; It&rsquo;s great people are interested in learning to code, but I feel like most have the wrong motivation or they look at it the wrong way." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://vlad.wtf/code/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2017-08-22T12:11:03+00:00" />
+<meta property="article:modified_time" content="2017-08-22T12:11:03+00:00" />
+
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="On learning to code"/>
+<meta name="twitter:description" content="Last week I had started to answer questions on Quora. It&rsquo;s surprisingly addictive I should say, so I kept answering a couple of questions every day. As my interests include programming and various languages, I get plenty of &ldquo;How do I learn to program in X?&rdquo; or &ldquo;As a beginner, how to choose a project?&rdquo; It&rsquo;s great people are interested in learning to code, but I feel like most have the wrong motivation or they look at it the wrong way."/>
+
+
+
+<meta itemprop="name" content="On learning to code">
+<meta itemprop="description" content="Last week I had started to answer questions on Quora. It&rsquo;s surprisingly addictive I should say, so I kept answering a couple of questions every day. As my interests include programming and various languages, I get plenty of &ldquo;How do I learn to program in X?&rdquo; or &ldquo;As a beginner, how to choose a project?&rdquo; It&rsquo;s great people are interested in learning to code, but I feel like most have the wrong motivation or they look at it the wrong way."><meta itemprop="datePublished" content="2017-08-22T12:11:03+00:00" />
+<meta itemprop="dateModified" content="2017-08-22T12:11:03+00:00" />
+<meta itemprop="wordCount" content="1058">
+<meta itemprop="keywords" content="" />
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  body {
+    font-family: Palatino, serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: #fff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: #444;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: #222;
+  }
+
+  a {
+    color: #3273dc;
+     
+  }
+
+  .title {
+    text-decoration: none;
+    border: 0;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: #f2f2f2;
+  }
+
+  pre code {
+    color: #222;
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+  }
+
+  div.highlight pre {
+    background-color: initial;
+    color: initial;
+  }
+
+  div.highlight code {
+    background-color: unset;
+    color: unset;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: #222;
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .helptext {
+    color: #777;
+    font-size: small;
+  }
+
+  .errorlist {
+    color: #eba613;
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: #8b6fcb;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #333;
+      color: #ddd;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    b {
+      color: #eee;
+    }
+
+    a {
+      color: #8cc2dd;
+    }
+
+    code {
+      background-color: #777;
+    }
+
+    pre code {
+      color: #ddd;
+    }
+
+    blockquote {
+      color: #ccc;
+    }
+
+    textarea,
+    input {
+      background-color: #252525;
+      color: #ddd;
+    }
+
+    .helptext {
+      color: #aaa;
+    }
+  }
+
+</style>
+
+</head>
+
+<body>
+  <header><a href="/" class="title">
+  <h2>vlad.wtf</h2>
+</a>
+</header>
+  <main>
+
+<h1>On learning to code</h1>
+<p>
+  <i>
+    <time datetime='2017-08-22' pubdate>
+      22 Aug, 2017
+    </time>
+  </i>
+</p>
+
+<content>
+  <p>Last week I had started to answer questions on Quora. It&rsquo;s surprisingly addictive I should say, so I kept answering a couple of questions every day. As my interests include programming and various languages, I get plenty of &ldquo;How do I learn to program in X?&rdquo; or &ldquo;As a beginner, how to choose a project?&rdquo; It&rsquo;s great people are interested in learning to code, but I feel like most have the wrong motivation or they look at it the wrong way.</p>
+<p>For me, starting to code was natural. It wasn&rsquo;t some kind of &ldquo;I want to learn to code python so I can get a job.&rdquo; It was simple: &ldquo;I&rsquo;d like to find out how to make a program. I don&rsquo;t know how they are made. I want to find out.&rdquo;</p>
+<p>This is a long story made short. I started with random documents in Word and saving them as .HTML. I thought I&rsquo;m building websites.</p>
+<p>Later on someone showed me CoffeeCup, some flash animation drag&amp;drop creator thing that lets you add links.</p>
+<p>I made random things with that.</p>
+<p>Then someone else pointed me to an online website maker that would also let you edit HTML. I started copying snippets from the web to make text glow or whatever things I found. Same person also showed me Pascal but we didn&rsquo;t get far beyond if statements.</p>
+<p>Later on, somehow, I was introduced to this computer club in my hometown. They were building software in Visual Basic. It was amazing - I could build applications that can actually do things when I click buttons. I built various small programs I found interesting - no guidance on the choice of project, I was just building things. I built two games, sort of playable, using images, timers and keyboard inputs.</p>
+<p>Sometime after that I was into building a skateboarding website - a project that kept me busy for years. I went from knowing how to make HTML pages to full-blown PHP websites using a CMS and then rewriting everything without the CMS.</p>
+<p>I got involved with the forums of PHP-Fusion, the CMS I used, helping others to the point where they (the maintainer for the Romanian forum) invited me to a trip on the sea side, for free.</p>
+<p>Then ended up at a national competition, InfoEducatie, where I&rsquo;ve been introduced to object oriented programming and MVC. Got kicked in the butt so hard about the quality of my code that I stepped up my game and won the competition the following year.</p>
+<p>I was coding every day. I was going to competitions during high-school, almost every week for a while - I wasn&rsquo;t missing a competition. Sometimes winning, sometimes losing&hellip; didn&rsquo;t matter. I was learning a lot from the workshops they organised and other people.</p>
+<p>That&rsquo;s how I learned to code. It was never a goal. It was the means to build projects and go to these competitions. When I got to University I learned a lot about the theory behind various things. I learned about Machine Learning and AI. During uni, I went to hackathons all the time. Lots of things you learn from hackathons - about business, about programming, you make friends&hellip; It&rsquo;s another story about hackathons and competitions.</p>
+<hr>
+<p>Let&rsquo;s get back to the topic now.</p>
+<p><strong>How do you learn to code?</strong></p>
+<p>You build stuff. What stuff? Anything that&rsquo;s interesting at the time.</p>
+<p><strong>Yeah, but what&rsquo;s best to build?</strong></p>
+<p>It really doesn&rsquo;t matter. The only thing that matters is that you are passionate about the project - that will automatically make you want to step up your game every time and build the best thing you can.</p>
+<p><strong>Got stuck?</strong></p>
+<p>Good - you&rsquo;re pushing yourself! Keep pushing. Get help. Figure it out. Anything but don&rsquo;t quit. You will get stuck often. Take my word on this: you will feel good when you figure it out.</p>
+<p><strong>How to pick a language? What language to pick?</strong></p>
+<p>Doesn&rsquo;t really matter either. As a software engineer, you must be able to pick up a new language in a relatively short time, as you code in it. Yes, you will have to refactor, but that&rsquo;s not the point. You will be moving forward and learning at the same time.</p>
+<p>Pick a language you can use for the project you want to build. Building a server-less browser-based game? JavaScript. Building an iOS app? Swift/ObjC. Building Android apps? Java. The point here is to just pick a project and start coding.</p>
+<p><strong>Anything I should understand before starting to code?</strong></p>
+<p>Some things. Understand the concept of variables. How programs execute line by line. What a function is and how to call a function. If statements. For statements. While statements.</p>
+<p>You can learn those as you program but you might need to read some tutorials/guides on them so everything makes sense.</p>
+<p>Do understand those things!</p>
+<p><strong>How about algorithms and data structures?</strong></p>
+<p>You will need them. You can practice them on various websites like <a href="https://HackerRank.com">https://HackerRank.com</a>. You can learn them from books, intro to CS online courses, tutorials, etc. </p>
+<p>It&rsquo;s probably a good idea to follow a intro to CS course. But not instead of building a project, more like in parallel.</p>
+<p><strong>Difficulty of projects?</strong></p>
+<p>If you pick something you can&rsquo;t even start, after you spent lots of time trying to figure it out, it might be too hard. If you build something that&rsquo;s easy, and you don&rsquo;t get stuck much, it might be too easy. You want something to push yourself at all times, but not something so hard that you can&rsquo;t even begin - you will lose motivation.</p>
+<p>You can always pick a very challenging project and make it easier as it goes. You want to build an amazing game with 2D graphics and multiplayer? How about a text-based single player one for the first version? You keep the core ideas, you implement the core logic and you draw the graphics later on, and add the multiplayer later on.</p>
+<p><strong>Should I learn language/framework X over language/framework Y?</strong></p>
+<p>Learn the one you like more - and get started. Don&rsquo;t procrastinate too much on the decision.</p>
+<p>Programmers get all personal about languages. You can start a religious war on a language vs another. It&rsquo;s normal (for programmers) to have opinions based on personal preferences (about languages/frameworks). Pick the one you like and build a project. Then learn the other one.</p>
+<p><strong>Good luck!</strong></p>
+
+</content>
+<p>
+  
+</p>
+
+  </main>
+  <footer>
+</footer>
+
+    
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Form filling on vlad.wtf</title>
+    <link>https://vlad.wtf/categories/form-filling/</link>
+    <description>Recent content in Form filling on vlad.wtf</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 05 Aug 2017 20:17:00 +0000</lastBuildDate><atom:link href="https://vlad.wtf/categories/form-filling/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Chatbots and the bad form-filling experience</title>
+      <link>https://vlad.wtf/chatbot/</link>
+      <pubDate>Sat, 05 Aug 2017 20:17:00 +0000</pubDate>
+      
+      <guid>https://vlad.wtf/chatbot/</guid>
+      <description>Things to consider if you’re thinking to build a chatbot-only service or website.
+Quick notice: I don’t build chatbots and don’t use too many, but I haven’t been impressed with the ones I’ve seen. In no way this is definitive advice on things to consider when building conversational interfaces, this is just my opinion on the topic.
+I’ve seen a few websites that welcome you with a full-screen chatbot and no option to not interact with it.</description>
+    </item>
+    
+  </channel>
+</rss>

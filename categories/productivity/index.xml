@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>productivity on vlad.wtf</title>
+    <link>https://vlad.wtf/categories/productivity/</link>
+    <description>Recent content in productivity on vlad.wtf</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 27 Mar 2019 11:34:01 +0000</lastBuildDate><atom:link href="https://vlad.wtf/categories/productivity/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lack of continuity really kills productivity</title>
+      <link>https://vlad.wtf/continuity/</link>
+      <pubDate>Wed, 27 Mar 2019 11:34:01 +0000</pubDate>
+      
+      <guid>https://vlad.wtf/continuity/</guid>
+      <description>I have this tendency of working on many things at once, and as a result I don&amp;rsquo;t really finish anything, I just make small progress until I switch context to start working on something else.
+This really kills my productivity. It seems obvious now but when I&amp;rsquo;m working on a project and start feeling pressured by not working on a different project, it&amp;rsquo;s not so obvious that I&amp;rsquo;m not getting either of them done.</description>
+    </item>
+    
+  </channel>
+</rss>

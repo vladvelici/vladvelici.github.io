@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Startups on vlad.wtf</title>
+    <link>https://vlad.wtf/categories/startups/</link>
+    <description>Recent content in Startups on vlad.wtf</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 07 Jul 2016 12:34:01 +0000</lastBuildDate><atom:link href="https://vlad.wtf/categories/startups/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building startups at EF6: the first half</title>
+      <link>https://vlad.wtf/ef/</link>
+      <pubDate>Thu, 07 Jul 2016 12:34:01 +0000</pubDate>
+      
+      <guid>https://vlad.wtf/ef/</guid>
+      <description>Read this on Medium.</description>
+    </item>
+    
+  </channel>
+</rss>

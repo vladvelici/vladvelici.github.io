@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Learning to code on vlad.wtf</title>
+    <link>https://vlad.wtf/categories/learning-to-code/</link>
+    <description>Recent content in Learning to code on vlad.wtf</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 22 Aug 2017 12:11:03 +0000</lastBuildDate><atom:link href="https://vlad.wtf/categories/learning-to-code/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>On learning to code</title>
+      <link>https://vlad.wtf/code/</link>
+      <pubDate>Tue, 22 Aug 2017 12:11:03 +0000</pubDate>
+      
+      <guid>https://vlad.wtf/code/</guid>
+      <description>Last week I had started to answer questions on Quora. It&amp;rsquo;s surprisingly addictive I should say, so I kept answering a couple of questions every day. As my interests include programming and various languages, I get plenty of &amp;ldquo;How do I learn to program in X?&amp;rdquo; or &amp;ldquo;As a beginner, how to choose a project?&amp;rdquo; It&amp;rsquo;s great people are interested in learning to code, but I feel like most have the wrong motivation or they look at it the wrong way.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Install a ROM, hboot and recovery without working volume buttons on HTC Desire (Bravo) | vlad.wtf</title>
+<meta name="title" content="Install a ROM, hboot and recovery without working volume buttons on HTC Desire (Bravo)" />
+<meta name="description" content="Before you follow this article to install the ROM on your device, please note that the result will be a slow, annoying phone.
+My motivation for writing this article and taking this approach in the first place is that my phone does not have working volume buttons at all and it is totally possible to install a newer version of Android.
+My phone is a HTC Desire Bravo running Android 2." />
+<meta name="keywords" content="" />
+
+
+<meta property="og:title" content="Install a ROM, hboot and recovery without working volume buttons on HTC Desire (Bravo)" />
+<meta property="og:description" content="Before you follow this article to install the ROM on your device, please note that the result will be a slow, annoying phone.
+My motivation for writing this article and taking this approach in the first place is that my phone does not have working volume buttons at all and it is totally possible to install a newer version of Android.
+My phone is a HTC Desire Bravo running Android 2." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://vlad.wtf/install-rom-hboot/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2015-02-19T12:34:01+00:00" />
+<meta property="article:modified_time" content="2015-02-19T12:34:01+00:00" />
+
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Install a ROM, hboot and recovery without working volume buttons on HTC Desire (Bravo)"/>
+<meta name="twitter:description" content="Before you follow this article to install the ROM on your device, please note that the result will be a slow, annoying phone.
+My motivation for writing this article and taking this approach in the first place is that my phone does not have working volume buttons at all and it is totally possible to install a newer version of Android.
+My phone is a HTC Desire Bravo running Android 2."/>
+
+
+
+<meta itemprop="name" content="Install a ROM, hboot and recovery without working volume buttons on HTC Desire (Bravo)">
+<meta itemprop="description" content="Before you follow this article to install the ROM on your device, please note that the result will be a slow, annoying phone.
+My motivation for writing this article and taking this approach in the first place is that my phone does not have working volume buttons at all and it is totally possible to install a newer version of Android.
+My phone is a HTC Desire Bravo running Android 2."><meta itemprop="datePublished" content="2015-02-19T12:34:01+00:00" />
+<meta itemprop="dateModified" content="2015-02-19T12:34:01+00:00" />
+<meta itemprop="wordCount" content="1375">
+<meta itemprop="keywords" content="" />
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  body {
+    font-family: Palatino, serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: #fff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: #444;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: #222;
+  }
+
+  a {
+    color: #3273dc;
+     
+  }
+
+  .title {
+    text-decoration: none;
+    border: 0;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: #f2f2f2;
+  }
+
+  pre code {
+    color: #222;
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+  }
+
+  div.highlight pre {
+    background-color: initial;
+    color: initial;
+  }
+
+  div.highlight code {
+    background-color: unset;
+    color: unset;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: #222;
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .helptext {
+    color: #777;
+    font-size: small;
+  }
+
+  .errorlist {
+    color: #eba613;
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: #8b6fcb;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #333;
+      color: #ddd;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    b {
+      color: #eee;
+    }
+
+    a {
+      color: #8cc2dd;
+    }
+
+    code {
+      background-color: #777;
+    }
+
+    pre code {
+      color: #ddd;
+    }
+
+    blockquote {
+      color: #ccc;
+    }
+
+    textarea,
+    input {
+      background-color: #252525;
+      color: #ddd;
+    }
+
+    .helptext {
+      color: #aaa;
+    }
+  }
+
+</style>
+
+</head>
+
+<body>
+  <header><a href="/" class="title">
+  <h2>vlad.wtf</h2>
+</a>
+</header>
+  <main>
+
+<h1>Install a ROM, hboot and recovery without working volume buttons on HTC Desire (Bravo)</h1>
+<p>
+  <i>
+    <time datetime='2015-02-19' pubdate>
+      19 Feb, 2015
+    </time>
+  </i>
+</p>
+
+<content>
+  <blockquote>
+<p>Before you follow this article to install the ROM on your device, please note that the result will be a slow, annoying phone.</p>
+</blockquote>
+<p>My motivation for writing this article and taking this approach
+in the first place is that my phone does not have working volume
+buttons at all and it is totally possible to install a newer
+version of Android.</p>
+<p>My phone is a HTC Desire Bravo running Android 2.3 with ROM
+CyanogenMod-7.2.0.1-bravo. It is rooted and has S-OFF. If you&rsquo;re
+looking on how to root your phone, there are plenty of tutorials
+on the web. This in only about how to flash a hboot, recovery,
+boot into recovery and flash a ROM without using the volume
+buttons.</p>
+<p>If you want to read about fastboot, there is a <a href="http://forum.xda-developers.com/showthread.php?t=2131284">full fastboot and
+adb guide on xda-developers</a>.</p>
+<p>Now all the steps required to install Android 4.4.4 on your HTC Desire are:</p>
+<ol>
+<li>Download all necessary files.</li>
+<li>Install AlphaRev Jelly Hboot (250/5/282).</li>
+<li>Install the 4ext recovery.</li>
+<li>Backup your current system.</li>
+<li>Create ext4 partitions on the SD Card.</li>
+<li>Copy the ROM and GApps files on the SD Card.</li>
+<li>Wipe everything.</li>
+<li>Flash ROM.</li>
+<li>Flash GApps.</li>
+<li>Reboot the ROM, welcome to Android 4.4.4.</li>
+<li>Enable A2SD.</li>
+</ol>
+<h1 id="booting-into-the-bootloader">Booting into the bootloader</h1>
+<p>The volume-key solution is to hold the <em>volume up</em> (or <em>down</em>) <em>button</em> and press
+the <em>power button</em>. A less-known (at least for me it was not known
+until today) solution is to hold the <em>back button</em> and
+press the <em>power button</em>.</p>
+<p>Still you won&rsquo;t be able to navigate though the menus but you can use
+the <code>fastboot</code> command from there (more above).</p>
+<p>Another way is using the <em>adb</em> command line tool.
+Assuming you have <em>adb</em> installed, in <code>$PATH</code> and all the
+drivers installed (in any requied, e.g. on Windows):</p>
+<ol>
+<li>Connect the phone to your computer.</li>
+<li>Enable USB debugging (if not already enabled).</li>
+<li>Sanity check: <code>adb devices</code> should list your device.</li>
+<li>Now reboot to the bootloader using: <code>adb reboot bootloader</code>. You can also reboot directly to recovery with <code>adb reboot recovery</code>.</li>
+</ol>
+<h2 id="adb-reboot-command"><code>adb</code> reboot command</h2>
+<p>Useful to have this command highlighted and on hand.</p>
+<pre><code>$ adb reboot [bootloader|recovery]
+</code></pre>
+<p>All usages with description:</p>
+<pre><code>adb reboot              // reboots the phone
+adb reboot bootloader   // reboots into the bootloader
+adb reboot recovery     // reboots into the recovery
+</code></pre>
+<h3 id="1-download-all-necessary-files">1) Download all necessary files</h3>
+<h6 id="alpharev-jelly-hboot-2505182httpforumxda-developerscomattachmentphpattachmentid2428531d1385997953"><a href="http://forum.xda-developers.com/attachment.php?attachmentid=2428531&amp;d=1385997953">AlphaRev Jelly Hboot (250/5/182)</a></h6>
+<p>MD5: 7393e92a6d4f6b6060d236c27d944ad3</p>
+<p>Direct link and more information form <a href="http://forum.xda-developers.com/showpost.php?p=48063010&amp;postcount=22">this xda-developers thread</a>.</p>
+<h6 id="4ext-recoveryhttpforumxda-developerscomattachmentphpattachmentid1631968d1357780284"><a href="http://forum.xda-developers.com/attachment.php?attachmentid=1631968&amp;d=1357780284">4ext recovery</a></h6>
+<p>MD5: 79496e1478ea56e33f3f2d90ac88adfe</p>
+<p>Direct link and more information form <a href="http://forum.xda-developers.com/showthread.php?t=1751258">this xda-developers thread</a>.</p>
+<h6 id="android-444-rom-kitkang-version-10httpwwwmediafirecomdownloadfbf3zkk7nql4j36cm-11-20140921-unofficial-bravozip"><a href="http://www.mediafire.com/download/fbf3zkk7nql4j36/cm-11-20140921-UNOFFICIAL-bravo.zip">Android 4.4.4 ROM KitKANG (version 1.0)</a></h6>
+<p>MD5: 21f917cec9b6edcfac81a8d1e2818446</p>
+<p>The <a href="http://forum.xda-developers.com/showthread.php?t=2549776">xda-developers thread for the ROM</a> includes more information about the ROM, known issues, a changelog and it might be more up to date than the links in this article.</p>
+<h6 id="gapps-slim-for-kitkang-v10httpwwwmediafirecomdownloadx87s07t7wckucdhspz_gapps-slim-kitkang-10zip"><a href="http://www.mediafire.com/download/x87s07t7wckucdh/spz_gapps-slim-kitkang-1.0.zip">GApps slim for KitKANG v1.0</a></h6>
+<p>MD5: e533d3ac1457160d378fd9a7ed119a49</p>
+<h3 id="2-install-alpharev-hboot">2) Install AlphaRev hboot</h3>
+<p>This should work with other hboots as well.</p>
+<ol>
+<li>Boot into the bootloader using the guide above (short: <code>adb reboot bootloader</code>).</li>
+<li><code>fastboot devices</code> should list your phone if everything is
+connected properly.</li>
+<li><code>fastboot erase cache</code> to erase the cache.</li>
+<li><code>fastboot oem rebootRUU</code> to reboot into RUU. Now a HTC logo should appear on
+the screen of your device.</li>
+<li><code>flashboot flash zip &lt;path-to-alpharev-jelly-hboot&gt;</code> to flash the hboot.</li>
+<li><code>flashboot reboot-bootloader</code> to reboot into the bootloader again. It should
+now be <strong>AlphaRev</strong>.</li>
+</ol>
+<p>Instructions from <a href="http://forum.xda-developers.com/showpost.php?p=32391466&amp;postcount=5">xda-developers</a>, credits going to <a href="http://forum.xda-developers.com/member.php?u=4842092">thehiggins</a>.</p>
+<h3 id="3-install-4ext-recovery">3) Install 4ext recovery</h3>
+<p>Now we are in the bootloader, using flashboot we can easily flash a recovery.</p>
+<ol>
+<li><code>unzip &lt;path to recovery&gt;</code> to unzip the 4ext recovery. It should
+unpack a <strong>recovery.img</strong> file.</li>
+<li><code>fastboot flash recovery recovery.img</code> to flash the recovery. And we&rsquo;re done.</li>
+</ol>
+<h4 id="boot-into-recovery">Boot into recovery</h4>
+<p>To boot into the recovery, boot into Android, and use <code>adb reboot recovery</code>. This step is
+not required if your volume buttons are working - only select <em>recovery</em> from the menu then.</p>
+<h3 id="4-create-a-backup">4) Create a backup</h3>
+<p>Do NOT skip this. Create a backup using the recovery options. Will be really useful
+if something goes wrong. In fact, it is pretty much the only <em>salvation</em>.</p>
+<ol>
+<li>go to <strong>backup | restore</strong></li>
+<li>hit <strong>backup</strong> and follow the on-screen instructions. The backup is now on your SD card, on the FAT partition.</li>
+</ol>
+<h3 id="5-partition-sd-card">5) Partition SD Card</h3>
+<p>You need at least 512MB of ext4 space on your SD Card for this ROM.</p>
+<p>You can do this by <a href="http://forum.xda-developers.com/showthread.php?t=2125513">either using the 4ext recovery or by using
+GParted</a>. The linked
+guide has detailed description of both methods but the 4ext solution is
+straightforward in this case, given we&rsquo;re already booted into the recovery
+and the SD Card is in the phone. Just follow the instructions from the
+<code>tools &gt; partition sd card</code> menu. Skip swap space and the second ext4 partition.</p>
+<h3 id="6-copy-files-to-sd-card">6) Copy files to SD Card</h3>
+<p>This is trivial but worths mentioning because we do not need to turn off the
+phone to get the SD Card out. Conveniently 4ext has a <code>toggle usb storage</code> option.</p>
+<ol>
+<li>tap <code>toggle usb storage</code>, see the SD card FAT partition on computer.</li>
+<li>copy the ROM zip file <code>cm-11-20140921-UNOFFICIAL-bravo.zip</code> on the SD Card.</li>
+<li>copy the GApps zip file <code>spz_gapps-slim-kitkang-1.0.zip</code> on the SD Card.</li>
+<li>copy the backup from the SD Card to your computer.</li>
+<li>eject the drive and tap <code>disconnect</code>.</li>
+</ol>
+<h3 id="7-wipe-everything">7) Wipe everything</h3>
+<p>I have tried without wiping everything and it did not boot (Cyannogen mod logo
+appeared but stayed there for ages). Wipe everything and it should be alright.</p>
+<ol>
+<li>open <code>wipe | format</code> menu</li>
+<li>select <code>format all except sd card</code></li>
+</ol>
+<h3 id="8-installing-rom">8) Installing ROM</h3>
+<ol>
+<li>go to <code>install from sd card</code></li>
+<li><code>select zip form sd card</code></li>
+<li>Select the ROM file <code>cm-11-20140921-UNOFFICIAL-bravo.zip</code></li>
+</ol>
+<h3 id="9-install-gapps">9) Install GApps</h3>
+<p>Same as the ROM, except choose the GApps file instead <code>spz_gapps-slim-kitkang-1.0.zip</code>.</p>
+<h3 id="10-reboot">10) Reboot</h3>
+<p>You have now installed Android 4.4.4 on your device. Now reboot your phone and you
+will see the Cyannogen Mod logo for a while (about 10 minutes), then Android 4.4.4
+should load.</p>
+<p>If it takes longer than 10-15 minutes you should consider restoring your back-up
+and trying again. It happened to me when I did not wipe all data before installing
+the ROM.</p>
+<h3 id="11-install-a2sd">11) Install A2SD</h3>
+<p>HTC Desire (bravo) has a very low internal memory. A2SD for the rescue:</p>
+<ol>
+<li>Open terminal emulator.</li>
+<li>type <code>su</code> and choose to allow this time only in the pop-up</li>
+<li>type <code>a2sd install</code>, and do either <code>y</code> (yes) to cache, <code>y</code> to data or only
+yes to cache. Yes to reboot.</li>
+</ol>
+<p><strong>NOTE</strong> The more you put on the SD Card, the slower your system will be. At the same time, if you put nothing, you don&rsquo;t have space for anything.</p>
+<p>You&rsquo;re done. Enjoy Android 4.4.4.</p>
+<h3 id="restoring-from-a-backup">Restoring from a backup</h3>
+<p>If something went wrong you can rollback to your backup quite easily. If you can
+go to the recovery mode just use the interface: <code>backup | restore</code> &gt; <code>restore</code>
+and follow instructions. However, in the case of only being able to access the
+bootloader and the volume buttons are broken, you should have a decent kernel
+to boot the</p>
+<p>In the backup you made, there is a (sub)folder like <code>2015-01-17.19.40.42_CyanogenMod7.2.0.1bravo</code>.
+Inside that folder, you find these files:</p>
+<pre><code>boot.img
+cache.yaffs2.img
+data.yaffs2.img
+fsinfo
+nandroid.md5
+recovery.img
+sd-ext.yaffs2.img
+system.yaffs2.img
+</code></pre>
+<p>We are interested in <code>system.yaffs2.img</code>, <code>data.yaffs2.img</code> and <code>boot.img</code>.
+Follow these commands to roll back to your backup:</p>
+<pre><code>fastboot erase system -w
+fastboot erase boot
+fastboot flash system system.yaffs2.img
+fastboot flash userdata data.yaffs2.img
+fastboot flash boot boot.img
+fastboot reboot
+</code></pre>
+<p>And now you should be back to your initial system, except for the SD card, but
+you can probably roll that back as well. I had a new card for the setup so I
+didn&rsquo;t run into this problem - therefore I&rsquo;m not sure how rolling it back works,
+but it is likely related to the <code>sd-ext.yaffs2.img</code> file. Maybe just a
+<code>dd</code> command like <code>dd if=sd-ext.yaffs2.img of=/dev/sdc1</code> will do
+(assuming /dev/sdc1 is the ext4 partition of the card on your computer).</p>
+<h2 id="review-of-the-system">Review of the system</h2>
+<p>I&rsquo;ve been using this system for about two months. It is horrible. It might be that the SD card I have is too slow, but the system is very slow overall. And I&rsquo;m not talking almost-usable-but-annoying slow, but annoyingly unusable slow. When someone calls me, it takes some time for the phone to turn on the screen and show who is calling me. When I want to send a text back, there is a huge wait from pressing the notification to the reply pop-up to show. Taking pictures is nearly impossible.</p>
+
+</content>
+<p>
+  
+</p>
+
+  </main>
+  <footer>
+</footer>
+
+    
+</body>
+
+</html>
