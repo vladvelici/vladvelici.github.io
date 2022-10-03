@@ -6,7 +6,18 @@
     <description>Recent content in Blogs on vlad.wtf</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 02 Oct 2022 16:10:01 +0000</lastBuildDate><atom:link href="https://vlad.wtf/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 03 Oct 2022 08:10:01 +0000</lastBuildDate><atom:link href="https://vlad.wtf/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Setting priorities for tasks</title>
+      <link>https://vlad.wtf/priorities/</link>
+      <pubDate>Mon, 03 Oct 2022 08:10:01 +0000</pubDate>
+      
+      <guid>https://vlad.wtf/priorities/</guid>
+      <description>I find it hard to prioritize tasks when it comes to building software. I also find it hard to prioritize projects in product meetings. And I don&amp;rsquo;t think I&amp;rsquo;m the only one. I hear many discussions about how to prioritize, and see formulas on how to do it.
+All of it is useless.
+For macro planning, aka what projects to bet on now, Jason Fried&amp;rsquo;s view on prioritization is the single way to go.</description>
+    </item>
+    
     <item>
       <title>Complicated login forms</title>
       <link>https://vlad.wtf/login-forms/</link>
